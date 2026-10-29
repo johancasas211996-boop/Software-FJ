@@ -7,8 +7,8 @@ Curso: Programación (213023) · Fase 4 – Componente práctico – Prácticas 
 
 | Sección | Contenido | Responsable |
 |---|---|---|
-| 1 | Configuración del archivo de logs | Integrante 1 |
-| 2 | Excepciones personalizadas | Integrante 1 |
+| 1 | Configuración del archivo de logs | JOHAN SEBASTIAN CASAS BARRERA |
+| 2 | Excepciones personalizadas | JOHAN SEBASTIAN CASAS BARRERA |
 | 3 | Clase abstracta `EntidadBase` y clase `Cliente` | Integrante 2 |
 | 4 | Clase abstracta `Servicio` y servicios especializados | Integrante 3 |
 | 5 | Clase `Reserva` | Integrante 4 |
