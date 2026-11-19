@@ -11,8 +11,8 @@ Curso: Programación (213023) · Fase 4 – Componente práctico – Prácticas 
 | 2 | Excepciones personalizadas | JOHAN SEBASTIAN CASAS BARRERA |
 | 3 | Clase abstracta `EntidadBase` y clase `Cliente` | DIEGO MAURICIO ARDILA |
 | 4 | Clase abstracta `Servicio` y servicios especializados | LADY CHAVARRO |
-| 5 | Clase `Reserva` | Integrante 4 |
-| 6 | Clase `SistemaGestion` (listas internas) | Integrante 5 |
+| 5 | Clase `Reserva` | LADY CHAVARRO |
+| 6 | Clase `SistemaGestion` (listas internas) | JOHAN SEBASTIAN CASAS BARRERA |
 | 7 | Simulación de operaciones y revisión del log | Todo el equipo |
 
 > Ejecute las celdas **en orden** (Kernel → Restart & Run All).
