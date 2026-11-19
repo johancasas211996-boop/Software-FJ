@@ -1,0 +1,64 @@
+2026-11-19 09:02:14 | INFO     | ===== Inicio del Sistema Software FJ =====
+2026-11-19 09:02:14 | INFO     | Registrar cliente 'Ana Pérez' -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Registrar cliente 'Ana Pérez'
+2026-11-19 09:02:14 | INFO     | Registrar cliente 'Luis Gómez' -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Registrar cliente 'Luis Gómez'
+2026-11-19 09:02:14 | ERROR    | Registrar cliente 'Carl0s' -> ClienteInvalidoError: [FJ-100] El nombre 'Carl0s' no puede contener números.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Registrar cliente 'Carl0s'
+2026-11-19 09:02:14 | ERROR    | Registrar cliente 'Marta Ruiz' -> ClienteInvalidoError: [FJ-100] Documento '12AB' inválido (6 a 10 dígitos).
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Registrar cliente 'Marta Ruiz'
+2026-11-19 09:02:14 | ERROR    | Registrar cliente 'Pedro Díaz' -> ClienteInvalidoError: [FJ-100] Correo 'pedro-sin-arroba' con formato inválido.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Registrar cliente 'Pedro Díaz'
+2026-11-19 09:02:14 | ERROR    | Registrar cliente 'Ana Duplicada' -> ClienteInvalidoError: [FJ-100] Ya existe un cliente con documento 1012345678.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Registrar cliente 'Ana Duplicada'
+2026-11-19 09:02:14 | INFO     | Crear servicio ReservaSala ('Sala Innovación',) -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Crear servicio ReservaSala ('Sala Innovación',)
+2026-11-19 09:02:14 | INFO     | Crear servicio AlquilerEquipo ('Portátil Dell',) -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Crear servicio AlquilerEquipo ('Portátil Dell',)
+2026-11-19 09:02:14 | INFO     | Crear servicio Asesoria ('Asesoría en Python',) -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Crear servicio Asesoria ('Asesoría en Python',)
+2026-11-19 09:02:14 | ERROR    | Crear servicio ReservaSala ('Sala Fantasma',) -> ServicioInvalidoError: [FJ-200] Tarifa '-5000' inválida: debe ser un número mayor que 0.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Crear servicio ReservaSala ('Sala Fantasma',)
+2026-11-19 09:02:14 | ERROR    | Crear servicio Asesoria ('Asesoría Redes',) -> ServicioInvalidoError: [FJ-200] Nivel 'maestro' no existe. Opciones: ['junior', 'senior', 'experto']
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Crear servicio Asesoria ('Asesoría Redes',)
+2026-11-19 09:02:14 | CRITICAL | Crear servicio AlquilerEquipo ('Video Beam',) -> ERROR INESPERADO TypeError: AlquilerEquipo.__init__() missing 1 required positional argument: 'unidades'
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Crear servicio AlquilerEquipo ('Video Beam',)
+2026-11-19 09:02:14 | INFO     | RES-015 CONFIRMADA | Ana Pérez | Sala Innovación | $257,040.00
+2026-11-19 09:02:14 | INFO     | Reservar para Ana Pérez (3 h) -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Reservar para Ana Pérez (3 h)
+2026-11-19 09:02:14 | INFO     | RES-016 CONFIRMADA | Luis Gómez | Portátil Dell | $632,961.00
+2026-11-19 09:02:14 | INFO     | Reservar para Luis Gómez (24 h) -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Reservar para Luis Gómez (24 h)
+2026-11-19 09:02:14 | INFO     | RES-017 CONFIRMADA | Ana Pérez | Asesoría en Python | $321,300.00
+2026-11-19 09:02:14 | INFO     | Reservar para Ana Pérez (2 h) -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Reservar para Ana Pérez (2 h)
+2026-11-19 09:02:14 | ERROR    | Reservar para Luis Gómez (10 h) -> ReservaInvalidaError: [FJ-300] Una asesoría dura entre 0.5 y 4 horas (se pidió 10).
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Reservar para Luis Gómez (10 h)
+2026-11-19 09:02:14 | ERROR    | Reservar para None (2 h) -> ReservaInvalidaError: [FJ-300] La reserva requiere un cliente válido.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Reservar para None (2 h)
+2026-11-19 09:02:14 | ERROR    | Reservar para Luis Gómez (2 h) -> ReservaInvalidaError: [FJ-300] No se pudo confirmar RES-020 por un error de cálculo. | causa: [FJ-500] Descuento 150% fuera del rango permitido (0 % a 99 %).
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Reservar para Luis Gómez (2 h)
+2026-11-19 09:02:14 | INFO     | SRV-012 'Asesoría en Python' disponible = False
+2026-11-19 09:02:14 | ERROR    | Reservar para Luis Gómez (1 h) -> ServicioNoDisponibleError: [FJ-210] El servicio 'Asesoría en Python' no está disponible.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Reservar para Luis Gómez (1 h)
+2026-11-19 09:02:14 | INFO     | SRV-012 'Asesoría en Python' disponible = True
+2026-11-19 09:02:14 | INFO     | RES-015 PROCESADA | cobro $257,040.00
+2026-11-19 09:02:14 | DEBUG    | Intento de procesamiento de RES-015 finalizado (estado: PROCESADA).
+2026-11-19 09:02:14 | INFO     | Procesar reserva RES-015 -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Procesar reserva RES-015
+2026-11-19 09:02:14 | ERROR    | Cancelar reserva RES-015 -> OperacionNoPermitidaError: [FJ-400] No se puede cancelar RES-015: ya está PROCESADA.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Cancelar reserva RES-015
+2026-11-19 09:02:14 | WARNING  | RES-017 CANCELADA | motivo: Asesor incapacitado
+2026-11-19 09:02:14 | INFO     | Cancelar reserva RES-017 -> OK
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Cancelar reserva RES-017
+2026-11-19 09:02:14 | ERROR    | Fallo al procesar RES-017
+2026-11-19 09:02:14 | DEBUG    | Intento de procesamiento de RES-017 finalizado (estado: CANCELADA).
+2026-11-19 09:02:14 | ERROR    | Procesar reserva RES-017 -> OperacionNoPermitidaError: [FJ-400] Solo se procesan reservas confirmadas (RES-017 está CANCELADA).
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Procesar reserva RES-017
+2026-11-19 09:02:14 | ERROR    | Procesar reserva None -> ReservaInvalidaError: [FJ-300] La reserva indicada no existe.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Procesar reserva None
+2026-11-19 09:02:14 | ERROR    | Cotizar con texto -> ServicioInvalidoError: [FJ-200] No se puede cotizar con un argumento de tipo str.
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Cotizar con texto
+2026-11-19 09:02:14 | ERROR    | Cotizar sin 'horas' -> ServicioInvalidoError: [FJ-200] Falta el parámetro 'horas' en la cotización. | causa: 'horas'
+2026-11-19 09:02:14 | DEBUG    | Operación finalizada: Cotizar sin 'horas'
+2026-11-19 09:02:14 | INFO     | ===== Fin de la simulación =====
